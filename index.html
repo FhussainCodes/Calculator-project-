@@ -1,108 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="light-theme">
     <div class="main">
+        <div class="part">
+            <h4>insert value</h4>
+            <input type="text" class="search" readonly>
+            <div class="numbers">
 
-                
-                <div class="part">
-                    <h4>insert value</h4>
-                <input type="text" class="search" readonly>  
-                   
-                   
-                    <div class = "numbers">
+                <button class="nums" onclick="currdisplay = currdisplay+1; 
+                    document.querySelector('.search').value = currdisplay;">1</button>
 
-                    
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+1; 
-                    document.querySelector('.search').value = currdisplay;" >1</button>
+                <button class="nums" onclick="currdisplay = currdisplay+2; 
+                    document.querySelector('.search').value = currdisplay;">2</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+2; 
-                    document.querySelector('.search').value = currdisplay;" >2</button>
+                <button class="nums" onclick="currdisplay = currdisplay+3; 
+                    document.querySelector('.search').value = currdisplay;">3</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+3; 
-                    document.querySelector('.search').value = currdisplay;" >3</button>
+                <button class="nums" onclick="currdisplay = currdisplay+ '+'; 
+                    document.querySelector('.search').value = currdisplay;">+</button>
 
-                    <button 
-                    class="nums"
-                    onclick="currdisplay = currdisplay+4; 
-                    document.querySelector('.search').value = currdisplay;" >4</button>
+                <button class="nums" onclick="currdisplay = currdisplay+4; 
+                    document.querySelector('.search').value = currdisplay;">4</button>
 
-                    
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+5; 
-                    document.querySelector('.search').value = currdisplay;" >5</button>
+                <button class="nums" onclick="currdisplay = currdisplay+5; 
+                    document.querySelector('.search').value = currdisplay;">5</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+6; 
-                    document.querySelector('.search').value = currdisplay;" >6</button>
+                <button class="nums" onclick="currdisplay = currdisplay+6; 
+                    document.querySelector('.search').value = currdisplay;">6</button>
 
-                     <button class="nums"
-                    onclick="currdisplay = currdisplay+7; 
-                    document.querySelector('.search').value = currdisplay;" >7</button>
+                <button class="nums" onclick="currdisplay = currdisplay+'-'; 
+                    document.querySelector('.search').value = currdisplay;">-</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+8; 
-                    document.querySelector('.search').value = currdisplay;" >8</button>
+                <button class="nums" onclick="currdisplay = currdisplay+7; 
+                    document.querySelector('.search').value = currdisplay;">7</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+9; 
-                    document.querySelector('.search').value = currdisplay;" >9</button>
+                <button class="nums" onclick="currdisplay = currdisplay+8; 
+                    document.querySelector('.search').value = currdisplay;">8</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+ '+'; 
-                    document.querySelector('.search').value = currdisplay;" >+</button>
+                <button class="nums" onclick="currdisplay = currdisplay+9; 
+                    document.querySelector('.search').value = currdisplay;">9</button>
 
-                    
+                <button class="nums" onclick="currdisplay = currdisplay+'*'; 
+                    document.querySelector('.search').value = currdisplay;">*</button>
 
-                    
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+'-'; 
-                    document.querySelector('.search').value = currdisplay;" >-</button>
+                <button class="nums" onclick="currdisplay = currdisplay+0; 
+                    document.querySelector('.search').value = currdisplay;">0</button>
 
+                <button class="nums" onclick="currdisplay = currdisplay+'.'; 
+                    document.querySelector('.search').value = currdisplay;">.</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+0; 
-                    document.querySelector('.search').value = currdisplay;" >0</button>
+                <button class="nums" onclick="currdisplay = ''; 
+                    document.querySelector('.search').value = currdisplay;">C</button>
 
-                   
+                <button class="nums" onclick="currdisplay = currdisplay+'/'; 
+                    document.querySelector('.search').value = currdisplay;">/</button>
 
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+'/'; 
-                    document.querySelector('.search').value = currdisplay;" >/</button>
-
-                    
-
-                    
-                        <button class="nums"
-                    onclick="currdisplay = currdisplay+'*'; 
-                    document.querySelector('.search').value = currdisplay;" >*</button>
-
-                    
-                    <button class="nums"
-                    onclick="currdisplay = currdisplay+'.'; 
-                    document.querySelector('.search').value = currdisplay;" >.</button>
-
-                    <button class="nums" 
-                    onclick="currdisplay = ''; 
-                    document.querySelector('.search').value = currdisplay;" >C</button>
-
-                    <button class="nums final"
-                    
-                    >=</button>
-
-                </div>
-                </div>
+                <button class="nums final">=</button>
             </div>
-    
+        </div>
+    </div>
+
     <script src="cal.js"></script>
 </body>
+
 </html>
